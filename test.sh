@@ -1,4 +1,6 @@
 #!/bin/bash
 source fonctions.sh
 
-keyContinue
+#keyContinue
+
+mySshKey

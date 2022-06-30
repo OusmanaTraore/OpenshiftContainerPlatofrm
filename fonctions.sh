@@ -145,7 +145,7 @@ while [ "$enter" != "e" ]
 do
  echo "======>>> Edit the file $fichier and add the correct IP > "
  vi $fichier 
- 
+
  read -p "======>>> When done press [e] enter to continue > " enter 
  if [ "$enter" != "e" ] 
     then
@@ -156,4 +156,21 @@ do
     sleep 1
  fi
 done
+}
+
+
+mySshKey(){
+    if [[ $#  -eq 0 ]] 
+    then
+        mytype="ed25519"
+        passPhrase=''
+        chemin="~/.ssh/"
+        echo "|| Generating ssh-key >> "
+        read -p "   == enter comment == " commentaire
+        read -p "   == enter file path == "fic
+        ssh-keygen -t ${mytype} -C "${commentaire}"  -N "${passPhrase}" -f ${chemin}+${fic}
+        
+    fi
+        # read -p "enter passphrase >>" passPhrase
+        # read -p "enter type of SSHKEY? >>" mytype
 }

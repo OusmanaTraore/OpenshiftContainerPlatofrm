@@ -211,3 +211,9 @@ firewall-cmd --zone=internal --add-service mountd --permanent
 firewall-cmd --zone=internal --add-service rpc-bind --permanent
 firewall-cmd --zone=internal --add-service nfs --permanent
 firewall-cmd --reload
+
+
+#  Manifest and Ignition files 
+echo " Manifest and Ignition files > "
+
+ssh-keygen -t ed25519 -C 
