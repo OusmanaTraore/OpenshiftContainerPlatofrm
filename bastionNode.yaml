@@ -1,0 +1,7 @@
+boostrap: addressMac_Bootstrap
+ocp-cp1 : adressMac_ocp-cp1
+ocp-cp2 : adressMac_ocp-cp2
+ocp-cp3 : adressMac_ocp-cp3
+ocp-worker1 : adressMac_ocp-worker1
+ocp-worker2 : adressMac_ocp-worker2
+ocp-worker3 : adressMac_ocp-worker3
